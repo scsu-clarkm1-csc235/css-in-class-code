@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* ID, Class & Type Selectors */
+        body {
+            color: darkblue;
+        }
+
+        .topic {
+            color: white;
+            background-color: darkblue;
+        }
+
+        #welcome {
+            color: coral;
+        }
+
+        /* Attribute Selectors */
+        a[href='http://www.google.com'] {
+            font-size: 20px;
+        }
+
+        /* Pseudo Classes */
+        a[href="http://www.coinbase.com"]:hover {
+            background-color: red;
+        }
+
+        /* Descendant Child Selector */
+        ul li {
+            list-style-type: none;
+        }
+
+        footer p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>How to use selectors</h1>
+        <p id="welcome">Welcome, find out how to use <span class="topic">selectors</span>using this document.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Types of <span class="topic">Selectors</span></h2>
+            <ul>
+                <li><a href="http://www.google.com" target="_blank">ID</a></li>
+                <li>Class</li>
+                <li>Type</li>
+                <li><a href="http://www.coinbase.com" target="_blank">Etc.</a></li>
+                <li>Pseudo Selector</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aut accusantium natus officiis officia
+                totam eos eius neque impedit fugiat?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aut accusantium natus officiis officia
+                totam eos eius neque impedit fugiat?</p>
+        </section>
+    </main>
+    <footer>
+        <p>This is a direct descendant of a footer</p>
+        <div>
+            <p>&copy;<span class="topic">Selector</span> Page</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
