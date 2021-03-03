@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal selector ... size properties of all elements */
+        * {
+            /* Would normally set this value here, but for demo purposes we will set it later */
+            /* box-sizing: border-box; */
+        }
+
+        .card {
+            /* Specifies borders for all sides */
+            /* order: border thickness, style, color */
+            border: 2px solid #00AA00;
+
+            /* Set a margin on all sides */
+            margin: 10px;
+
+            /* Set padding on all sides */
+            padding: 10px;
+
+            /* Sets width via standard model */
+            width: 500px;
+        }
+
+        /* Sets box model to border-box ... includes padding, border in width and height */
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .different-borders {
+            /* Sets all borders the same */
+            border: 2px solid coral;
+
+            /* Override individual border properties */
+            border-right-style: dotted;
+            border-top: none;
+            border-bottom-style: none;
+
+        }
+
+        .different-margins-padding {
+            /* Margins */
+
+            /* Individually specified */
+            /* 
+            margin-top: 50px;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            */
+
+            /* top, right, bottom, left */
+            margin: 50px 0 10px 100px;
+
+            /* Padding */
+
+            padding-top: 50px;
+            padding-right: 5px;
+            padding-bottom: 100px;
+            padding-left: 50px;
+
+            /* Individually specified */
+            padding: 50px 5px 100px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <h2>Standard Box Sizing</h2>
+    <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos aut similique odit fugit
+        voluptatibus id mollitia obcaecati dolore nam natus suscipit ipsum, velit, temporibus ut recusandae,
+        cupiditate molestias perferendis.</div>
+    <h2>Border Box Sizing</h2>
+    <div class="card border-box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos aut similique odit
+        fugit
+        voluptatibus id mollitia obcaecati dolore nam natus suscipit ipsum, velit, temporibus ut recusandae,
+        cupiditate molestias perferendis.</div>
+    <p>All styles are box-sizing: border-box for the remainder of the page.</p>
+
+    <h2>Borders</h2>
+    <p class="card border-box different-borders">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, quas
+        ut! Nobis
+        exercitationem ipsam optio deserunt sit, quisquam blanditiis, quis tempora dolore fuga numquam minus, commodi
+        odio atque aperiam sapiente. Quas qui ratione dolorem reiciendis aliquid. Neque maxime error dicta est ipsa.
+        Tenetur officiis voluptas minus voluptatum architecto omnis adipisci.</p>
+
+    <h2>Margins and Padding</h2>
+    <p class="card border-box different-margins-padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Cumque earum
+        tenetur ducimus fuga tempore necessitatibus deserunt repellat, commodi reprehenderit nulla praesentium!
+        Distinctio ipsa tenetur quod nesciunt deleniti voluptate, excepturi corrupti, quas voluptas unde sint facere
+        pariatur. Dolores, nulla provident. Ipsa voluptates totam voluptatibus error reiciendis eveniet nulla deleniti
+        porro nemo.</p>
+</body>
+
+</html>

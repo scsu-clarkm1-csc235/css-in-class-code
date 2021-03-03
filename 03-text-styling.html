@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Styling</title>
+    <style>
+        html {
+            /* Sets base font size ... default is 16px */
+            font-size: 10px;
+        }
+
+        body {
+            /* Set default fount color */
+
+            /* Keyword colors */
+            /* color: gray; */
+
+            /* RGB & RGBA Colors */
+            /* color: rgb(255, 0, 0); */
+            /* color: rgba(255, 0, 0, .8); */
+
+            /* Hexadecimal Colors */
+            color: #878b87;
+
+            /* Set default font stack (make sure it is web safe) */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            /* Override color for level 1 heading */
+            color: coral;
+
+            /* Convert to uppercase */
+            text-transform: uppercase;
+        }
+
+        p {
+            /* Sets the spacing between lines in a paragraph. Multiplied by font size. */
+            line-height: 2.0;
+        }
+
+        #font-size-ex {
+            /* Size both paragraphs relative to html element font size */
+            font-size: 1.5rem;
+        }
+
+        #font-size-ex p:last-child {
+            /* Size last paragraph using ems, relative to parent (#font-size-ex) font-size */
+            font-size: 1.5em;
+        }
+
+        .mono-font {
+            /* Set font face to monospace type */
+            font-family: monospace;
+        }
+
+        /* Italic, bold, and underline */
+        .italic-ex {
+            font-style: italic;
+        }
+
+        .bold-ex {
+            font-weight: bold;
+        }
+
+        .underline-ex {
+            text-decoration: underline;
+        }
+
+        /* Text alignment */
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        /* Letter and word spacing */
+        #letter-word-space-ex p {
+            letter-spacing: 5px;
+            word-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bitcoin is a Cryptocurrency</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium adipisci nemo enim perferendis,
+        alias nesciunt ipsa dolor facilis assumenda eius et excepturi eveniet consequuntur repellat aliquid recusandae
+        laboriosam modi, fuga sunt earum omnis odio est explicabo? Libero minus aperiam atque eaque neque doloribus.
+        Distinctio eligendi repellendus asperiores! Perspiciatis, libero.</p>
+
+    <section id="font-size-ex">
+        <h2>Font Size</h2>
+        <p>Paragraph sized with <code>rem</code> units</p>
+        <p>Paragraph sized with <code>em</code> units</p>
+    </section>
+
+    <section>
+        <h2>Font Family</h2>
+        <p>Changing to a monospaced font ...</p>
+        <p class="mono-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatem laudantium
+            nesciunt
+            nam quisquam molestias inventore velit veniam illo unde mollitia fuga sint nobis, aliquam adipisci
+            architecto
+            asperiores itaque aperiam cum eaque corporis explicabo minima deleniti! Inventore, molestias deserunt
+            corrupti
+            commodi modi atque voluptates facilis porro, sunt blanditiis, illo quidem!</p>
+    </section>
+
+    <section>
+        <h2>Other Text Formating</h2>
+        <p class="bold-ex">Font Weight ... Repellendus obcaecati enim quidem excepturi corrupti
+            ipsum optio modi? Dolor, dicta quas?</p>
+        <p class="italic-ex">Font Style ... Repellendus obcaecati enim quidem excepturi corrupti
+            ipsum optio modi? Dolor, dicta quas?</p>
+        <p class="underline-ex">Text Decoration ... Repellendus obcaecati enim quidem excepturi corrupti
+            ipsum optio modi? Dolor, dicta quas?</p>
+    </section>
+
+    <section>
+        <h2>Text Alignment</h2>
+        <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut pariatur nulla commodi neque
+            temporibus, officiis dolores odit aliquid eius maiores et deleniti vel labore eum nesciunt blanditiis
+            consectetur modi totam recusandae! Consequatur accusamus, accusantium debitis nulla provident, ipsam
+            temporibus
+            porro neque, corrupti in est cupiditate consequuntur voluptates itaque quisquam totam.</p>
+        <p class="text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut pariatur nulla commodi neque
+            temporibus, officiis dolores odit aliquid eius maiores et deleniti vel labore eum nesciunt blanditiis
+            consectetur modi totam recusandae! Consequatur accusamus, accusantium debitis nulla provident, ipsam
+            temporibus
+            porro neque, corrupti in est cupiditate consequuntur voluptates itaque quisquam totam.</p>
+        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut pariatur nulla commodi
+            neque
+            temporibus, officiis dolores odit aliquid eius maiores et deleniti vel labore eum nesciunt blanditiis
+            consectetur modi totam recusandae! Consequatur accusamus, accusantium debitis nulla provident, ipsam
+            temporibus
+            porro neque, corrupti in est cupiditate consequuntur voluptates itaque quisquam totam.</p>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut pariatur nulla commodi
+            neque
+            temporibus, officiis dolores odit aliquid eius maiores et deleniti vel labore eum nesciunt blanditiis
+            consectetur modi totam recusandae! Consequatur accusamus, accusantium debitis nulla provident, ipsam
+            temporibus
+            porro neque, corrupti in est cupiditate consequuntur voluptates itaque quisquam totam.</p>
+    </section>
+
+    <section id='letter-word-space-ex'>
+        <h2>Letter & Word Spacing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio reprehenderit veritatis eligendi illo
+            culpa maiores ex quidem inventore perspiciatis fugiat vel assumenda harum exercitationem impedit nam placeat
+            ducimus, expedita delectus nisi ad voluptatibus eum dolorem odit? Libero aperiam nesciunt rerum cupiditate
+            officia, veritatis, modi magnam culpa eos tempore animi.</p>
+    </section>
+
+</body>
+
+</html>
