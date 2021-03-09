@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins, Padding, Border</title>
+    <style>
+        /* CSS Reset */
+        * {
+            box-sizing: border-box;
+
+            /* Shorthand for same margin on all sides */
+            margin: 0;
+
+            /* Shorthand for same padding on all sides */
+            padding: 0;
+        }
+
+        p {
+            /* Create same margin on all sides */
+            /* margin: 15px; */
+
+            /* Different margin top/bottom */
+            /* margin-top: 15px;
+            margin-bottom: 25px; */
+
+            /* Shorthand ... top right bottom left */
+            /* margin: 15px 0 25px 0; */
+
+            /* Margins top/bottom and left/right */
+            /* margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            margin-right: 20px; */
+
+            /* top right bottom left */
+            /* margin: 15px 20px 15px 20px; */
+
+            /* top/bottom left/right */
+            margin: 15px 20px;
+
+            /* Padding same on all sides */
+            /* padding: 15px; */
+
+            /* Padding different on top/bottom left/right */
+            padding: 50px 25px;
+
+            /* thickness style color */
+
+            border: 2px dotted green;
+            border-left: 5px solid red;
+            border-left-style: dotted;
+        }
+
+        p.rounded {
+            border: 2px solid coral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, est autem repellendus cupiditate odio tempore
+        officia quos voluptates at blanditiis. Et veritatis, ad incidunt dolorum fuga ipsum cupiditate earum asperiores
+        similique rerum dignissimos quia vitae tempore pariatur veniam inventore commodi quaerat blanditiis consectetur
+        placeat iure odio eius quo! Reiciendis, et.
+    </p>
+    <p class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, est autem repellendus cupiditate odio tempore
+        officia quos voluptates at blanditiis. Et veritatis, ad incidunt dolorum fuga ipsum cupiditate earum asperiores
+        similique rerum dignissimos quia vitae tempore pariatur veniam inventore commodi quaerat blanditiis consectetur
+        placeat iure odio eius quo! Reiciendis, et.
+    </p>
+    <p class="rounded">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quae incidunt ipsam suscipit temporibus
+        atque voluptates consequuntur libero velit repellendus voluptatibus recusandae perferendis accusamus, repellat,
+        numquam quibusdam sint reiciendis necessitatibus nobis, ab maxime similique dolor quisquam. Quasi temporibus
+        amet ducimus assumenda praesentium libero, repellendus sed numquam quo recusandae ipsam itaque?
+    </p>
+</body>
+
+</html>
